@@ -1,0 +1,176 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{Software}\\\textbf{Engineering},
+        \textbf{~Application~}\\\textbf{~Monitoring~},
+        \textbf{~~~System~~~}\\\textbf{~~~Design~~~},
+        \textbf{Performance}\\\textbf{Optimization},
+        \textbf{~~Database~~}\\\textbf{~~Design~~}
+    }
+}
+
+\programming{{Java $\textbullet$ Golang / 5.0}, {Newrelic $\textbullet$ Kibana / 5.2}, {Postgres $\textbullet$ Mongo $\textbullet$ MySQL / 5.4}, {Microservices $\textbullet$ Distributed Systems / 5.4 }, {Kafka $\textbullet$ Event Driven System $\textbullet$ Redis / 5.6}, {Typescript $\textbullet$ Node.js $\textbullet$ PHP $\textbullet$ Python / 5.7 }}
+
+\education{
+\textbf{Engineering, Information Technology} (Agg: 82.45) \\
+Guru Gobind Singh Indraprastha University \\
+2014 - 2018 | Delhi, India
+
+\textbf{Senior Secondary, CBSE} (Agg: 91.8) \\
+Hansraj Smarak School | Delhi, India
+}
+
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{Parv Jain} % Your name
+\cvjobtitle{ Software Engineer } % Job
+% title/career
+
+\cvlinkedin{/in/jain-parv}
+\cvgithub{parv-jain}
+\cvnumberphone{(+91) 88600 57832} % Phone number
+\cvsite{medium.com/@parvjn616} % Personal website
+\cvmail{parvjn616@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+ 
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+\begin{twenty} % Environment for a list with descriptions
+    \twentyitem
+    	{March 2023 -}
+		{Present}
+        {Engineering Lead}
+        {\href{https://pluang.com/}{Pluang}}
+        {}
+        {\begin{itemize}
+        \item Engineered highly \textbf{scalable designs for the pricing module, order matching, and order processing modules}. These designs were meticulously crafted to \textbf{handle increased workloads} and ensure seamless performance under high demand scenarios.
+        \item Excelled in the pricing module of the equity product, flawlessly managing a staggering workload of over \textbf{500,000 ticks per minute} from exchange via socket connections, processing them with a capacity of \textbf{100,000 ticks per minute} on a single pod. Seamlessly orchestrated the pricing pipeline, maintaining an exceptional end-to-end latency of under \textbf{60 ms}. This encompassed the swift handling of price ticks from reception to consumption by user's socket connections on app, as well as seamless integration with internal matching and portfolio services.
+        \item Enhanced the order processing module, achieving a remarkable capability of processing up to 20,000 orders per minute on a single pod.
+        \end{itemize}}
+    \\
+    \twentyitem
+    	{Sep 2022 -}
+		{Mar 2023}
+        {SDE-3}
+        {\href{https://pluang.com/}{Pluang}}
+        {}
+        {\begin{itemize}
+        \item Successfully empowered the team in \textbf{system design and released the highly anticipated pockets and recurring order features} for the US Stocks product.
+        \item Constructed a \textbf{Node.js Kafka wrapper to establish uniform usage practices} across the organization, mitigating issues stemming from diverse implementations across multiple teams.
+        \item Focused on \textbf{enhancing metrics measurability} within the application, devised custom application-level monitors inspired by Kibana's low-level design (LLD) monitors. These custom monitors were instrumental in generating clear visibility into internal application statistics, \textbf{enabling further optimization} efforts.
+        \end{itemize}}
+    \\   
+    \twentyitem
+   		{Jan 2022 -}
+		{Sep 2022}
+        {SDE-2}
+        {\href{https://pluang.com}{Pluang}}
+        {}
+        {\begin{itemize}
+        \item Successfully released advanced order types \textbf{(stop, stop limit, along with exit strategies), leverage (2x, 4x - Intraday), back-to-back hedging, and instant USD conversion from local currency} features in the US Stocks product.
+        \item Played a pivotal role in actively contributing to the design of the order matching engine, including the advanced order types matching. Collaborated closely with the team to provide valuable insights and expertise, ensuring an efficient and robust architecture for matching complex order types.
+        \item Revamped the \textbf{Cryptocurrency hedging flow} through a comprehensive redesign process.
+        \end{itemize}}
+    \\
+    \twentyitem
+   		{Sep 2021 -}
+		{Jan 2022}
+        {Software Engineer}
+        {\href{https://pluang.com/}{Pluang}}
+        {}
+        {\begin{itemize}
+        \item \textbf{US equities product system design and development} - Launched Pluang's US equities product, allowing users to trade US stocks, allowing users to trade US stocks, resulting in increased user acquisition and AUM growth.
+        \item Pioneered the implementation of a \textbf{scalable foundation for the candlestick generation service}. This achievement marked the first-ever instance of such capabilities at Pluang. Developed a highly \textbf{scalable and efficient solution}, enabling the generation of candlestick data in a \textbf{reliable and performant} manner.
+        \item Ensured rapid response times of under \textbf{20 ms} for public endpoints and under \textbf{3 ms} for internal services, optimizing overall system efficiency and user experience.
+        \end{itemize}}
+    \\
+    %\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\begin{fullwidth}
+\begin{twenty}
+     \twentyitem
+   		{Dec 2019 -}
+		{Sep 2021}
+        {Software Engineer}
+        {\href{https://paytm.com/}{Paytm}}
+        {}
+        {\begin{itemize}
+        \item Led the development of a highly scalable game server for multiplayer games, incorporating robust core gameplay business logic.
+        \item Engineered the tournament feature for Ludo, managing a whopping \textbf{300,000 concurrent users handling over 50,000 concurrently running games} including spectate mode user connections.
+        \item Recognized as a Paytm Rockstar Engineer, receiving the prestigious award twice during my tenure at Paytm.
+        \end{itemize}}
+    \\
+    %\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+\begin{twenty}
+     \twentyitem
+   		{Dec 2019 -}
+		{Sep 2021}
+        {Software Engineer}
+        {\href{https://www.shl.com/en-in/}{Aspiring Minds - Acquired by SHL}}
+        {}
+        {\begin{itemize}
+        \item Contributed to the development of an \textbf{Auto-Interview Scoring System that accurately evaluates candidate video responses, taking into account confidence, grammar, content, and domain expertise scores}.
+        \item Recognized as the Employee of the Quarter for Q3 2018-19, highlighting exceptional performance and contributions to the organization.
+        \end{itemize}}
+    \\
+    %\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\section{Key Personal Project Highlights}
+\begin{twenty}
+    \twentyitem
+    	{2016 - }
+            {Present}
+        {Noteshub}
+        {\href{https://noteshub.co.in/}{https://noteshub.co.in}}
+        {}
+        {
+        {\begin{itemize}
+        \item Played multiple roles throughout the product journey of NotesHub, a specialized platform that caters to engineering students for downloading and sharing study materials.
+        \item Successfully bootstrapped the idea and product from scratch, contributing to its conceptualization and implementation.
+        \item Brainstormed and ideated various features to enhance the platform's capabilities.
+        \item Initially implemented a buy-and-sell feature for study materials, handling the backend system. Although it ran successfully for a few months, challenges with the logistics module led to its discontinuation.
+        \item Maintained a keen focus on operations, content creation, marketing promotions and development for the product.
+        \item Designed a versatile database schema for the platform, enabling configuration for numerous universities and courses.
+        \item Product includes a web portal and an Android application (with over 50,000 downloads), benefiting approximately 50,000 students annually and generating close to 1.2 million page views per month.
+        \end{itemize}}
+        }
+    \\
+    %\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+\end{fullwidth}
+\end{document} 
