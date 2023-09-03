@@ -152,17 +152,26 @@
 \newcommand*\icon[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=1pt, fill=mainblue,mainblue,text=white] (char) {#1};}}
 
 % Command for printing skill progress bars
-\newcommand\programming[1]{ 
-	\renewcommand{\programming}{
-		\begin{tikzpicture}
-        	\node [above right] at (0, 4);
-			\foreach [count=\i] \x/\y in {#1}{
-				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
-				\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
-				\node [above right] at (0,\i+0.35) {\x};
-			}
-		\end{tikzpicture}
-	}
+% \newcommand\programming[1]{ 
+% 	\renewcommand{\programming}{
+% 		\begin{tikzpicture}
+%         	\node [above right] at (0, 4);
+% 			\foreach [count=\i] \x/\y in {#1}{
+% 				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
+% 				\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
+% 				\node [above right] at (0,\i+0.35) {\x};
+% 			}
+% 		\end{tikzpicture}
+% 	}
+% }
+\newcommand\programming[1]{%
+    \renewcommand{\programming}{%
+        \begin{itemize}
+            \foreach [count=\i] \x/\y in {#1}{
+                \item \text{\x}
+            }
+        \end{itemize}
+    }
 }
 \newcommand\education[1]{ 
 	\renewcommand{\education}{
