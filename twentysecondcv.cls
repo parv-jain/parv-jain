@@ -399,4 +399,3 @@
     % sets the opacity at which the bubble text is shown
     bubble text opacity = 1,
 }
-
