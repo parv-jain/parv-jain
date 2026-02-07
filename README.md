@@ -20,6 +20,7 @@ Love to engineer scalable software systems and brainstorm to build great product
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=openjdk&logoColor=white)
 
 ### 🧱 Frameworks
+![Express](https://github-readme-stats.vercel.app?style=for-the-badge&logo=openjdk&logoColor=white)
 
 ### 🏗 Infrastructure & Databases
 ![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)
