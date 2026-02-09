@@ -9,7 +9,7 @@ Love to engineer scalable software systems and brainstorm to build great product
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jain-parv/)
 [![Blog](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=ghost&logoColor=white)](https://medium.com/@parvjn616)
-[![Email](https://img.shields.io/badge/Email-contact@jatinbansal.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:parvjn616@gmail.com)
+[![Email](https://img.shields.io/badge/Email-parvjn616@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:parvjn616@gmail.com)
 
 ---
 
